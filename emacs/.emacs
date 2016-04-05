@@ -35,7 +35,10 @@
 (add-to-list 'load-path "~/.emacs-lisp")
 (require 'php-mode)
 (add-hook 'php-mode-user-hook 'turn-on-font-lock)
-
+;;jade-mode
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl\\'" . sws-mode))
 ;; Universal Charset Auto Detector
 (require 'unicad)
 
